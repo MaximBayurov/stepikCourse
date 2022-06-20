@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "week-day 1": {
+      "commandName": "Project",
+      "commandLineArgs": "week-day -d 1"
+    },
+    "week-day 6": {
+      "commandName": "Project",
+      "commandLineArgs": "week-day -d 6"
+    },
+    "locator Ю -1 -1": {
+      "commandName": "Project",
+      "commandLineArgs": "locator -sd Ю -c -1 -1"
+    },
+    "locator C 2 1 -1": {
+      "commandName": "Project",
+      "commandLineArgs": "locator -sd С -c 2 1 -1"
+    }
+  }
+}

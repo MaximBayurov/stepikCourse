@@ -1,0 +1,8 @@
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\bin\Debug\PractiveWork3.exe.config
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\bin\Debug\PractiveWork3.exe
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\bin\Debug\PractiveWork3.pdb
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\obj\Debug\PractiveWork3.csproj.AssemblyReference.cache
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\obj\Debug\PractiveWork3.csproj.SuggestedBindingRedirects.cache
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\obj\Debug\PractiveWork3.csproj.CoreCompileInputs.cache
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\obj\Debug\PractiveWork3.exe
+C:\Users\wolfb\Documents\Visual Studio Projects\PractiveWork3\PractiveWork3\obj\Debug\PractiveWork3.pdb
