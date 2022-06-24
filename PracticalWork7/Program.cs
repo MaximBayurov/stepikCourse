@@ -36,6 +36,8 @@ namespace PracticalWork7
             rootCommand.AddOption(taskOption);
             rootCommand.SetHandler((task) =>
             {
+                Console.WriteLine(task.GetDescription());
+
                 task.Execute();
 
                 Console.WriteLine("Нажмите любую кнопку...");

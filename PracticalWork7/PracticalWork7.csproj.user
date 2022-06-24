@@ -3,6 +3,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Project</StartAction>
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
-    <StartArguments>-t 2.1</StartArguments>
+    <StartArguments>-t 2.3</StartArguments>
   </PropertyGroup>
 </Project>

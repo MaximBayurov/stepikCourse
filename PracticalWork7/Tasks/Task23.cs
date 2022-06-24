@@ -16,7 +16,28 @@ namespace PracticalWork7.Tasks
         }
         public override void Execute()
         {
-            Console.WriteLine("SUCK SUCK");
+            int M;
+            Console.WriteLine("Введите целое число M, определяющее размерность массива");
+            Console.Write("M:");
+            InputHelper.ReadInt(out M);
+
+            int[][] array = Generate.Array(M, M);
+
+            TablePrinter printer = new TablePrinter((int.MaxValue.ToString().Length + 2) * M);
+            printer.PrintTable(array);
+            printer.PrintTable(ResetSideDiagonalFor(array));
+        }
+
+        private T[][] ResetSideDiagonalFor<T>(T[][] array)
+        {
+            for(int i = 0; i < array.Length; i++)
+            {
+                for(int j = 0; j < array[i].Length - 1 - i; j++)
+                {
+                    array[i][j] = default(T);
+                }
+            }
+            return array;
         }
     }
 }

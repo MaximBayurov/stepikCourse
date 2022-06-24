@@ -11,14 +11,14 @@ namespace PracticalWork7.Tasks
         public Task21()
         {
             StringID = "2.1";
-            Description = "Дана матрица размера M×N и целое число K (1≤K≤M). Найти сумму и произведение элементов K-й строки данной матрицы.";
+            Description = "Дана матрица размера M*N и целое число K (1<=K<=M). Найти сумму и произведение элементов K-й строки данной матрицы.";
             Order = 40;
         }
         public override void Execute()
         {
 
             int N, M, K;
-            Console.WriteLine("Введите целые числа N и M, определяющие размерность массива");
+            Console.WriteLine("Введите целые числа M и N, определяющие размерность массива");
             Console.Write("M:");
             InputHelper.ReadInt(out M);
             Console.Write("N:");
@@ -39,7 +39,7 @@ namespace PracticalWork7.Tasks
                 return isValid;
             });
 
-            Console.WriteLine("Сумма {0} строки: {1}", K, EvaluateSum(array[K]));
+            Console.WriteLine("Сумма {0} строки: {1}", K, EvaluateSum(array[K-1]));
         }
 
         private double EvaluateSum(int[] ints)

@@ -16,7 +16,48 @@ namespace PracticalWork7.Tasks
         }
         public override void Execute()
         {
-            Console.WriteLine("SUCK SUCK");
+            int N, M, K2, K1;
+            Console.WriteLine("Введите целые числа M и N, определяющие размерность массива");
+            Console.Write("M:");
+            InputHelper.ReadInt(out M);
+            Console.Write("N:");
+            InputHelper.ReadInt(out N);
+
+            int[][] array = Generate.Array(M, N);
+
+            TablePrinter printer = new TablePrinter((int.MaxValue.ToString().Length + 2) * N);
+            printer.PrintTable(array, columnHeader: Generate.NumberingFor(array));
+
+            Console.Write("K2:");
+            InputHelper.ReadInt(out K2, (value) => {
+                bool isValid = 1 <= value & value <= M;
+                if (!isValid)
+                {
+                    Console.WriteLine("Целое число K2 должно быть между 1 и M (1 <= K2 <= {0})", M);
+                }
+                return isValid;
+            });
+
+            Console.Write("K1:");
+            InputHelper.ReadInt(out K1, (value) => {
+                bool isValid = 1 <= value & value <= K2;
+                if (!isValid)
+                {
+                    Console.WriteLine("Целое число K1 должно быть между 1 и К2 (1 <= K1 <= {0})", K2);
+                }
+                return isValid;
+            });
+
+            printer.PrintTable(SwipeRows(array, K1-1, K2-1), columnHeader: Generate.NumberingFor(array));
+        }
+
+        private int[][] SwipeRows(int[][] array, int k1, int k2)
+        {
+            int[] bufferRow = array[k1];
+            array[k1] = array[k2];
+            array[k2] = bufferRow;
+
+            return array;
         }
     }
 }
