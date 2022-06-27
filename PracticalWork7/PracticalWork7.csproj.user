@@ -5,4 +5,7 @@
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
     <StartArguments>-t 2.3</StartArguments>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
 </Project>
